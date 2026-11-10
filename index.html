@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Arkitech Studio — студия разработки игр</title>
+  <meta name="description" content="Arkitech Studio — студия разработки игр: полный цикл, геймдизайн, 2D/3D-арт и портирование. Тестовая версия сайта.">
+  <meta name="theme-color" content="#07060f">
+  <link rel="canonical" href="https://arkitech.studio/">
+
+  <!-- Open Graph / превью в соцсетях -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Arkitech Studio">
+  <meta property="og:url" content="https://arkitech.studio/">
+  <meta property="og:title" content="Arkitech Studio — студия разработки игр">
+  <meta property="og:description" content="Делаем игры под ключ: от идеи и прототипа до релиза и поддержки.">
+  <meta property="og:image" content="https://arkitech.studio/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ============ 1. ШАПКА ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Arkitech Studio — наверх">
+        <span class="logo__mark" aria-hidden="true"></span>ARKITECH<span class="logo__dim">.STUDIO</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#about">О студии</a>
+        <a href="#games">Игры</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact">Контакты</a>
+        <a class="btn btn--small nav__bot" data-bot-link href="#contact" target="_blank" rel="noopener">Написать боту</a>
+      </nav>
+      <a class="btn btn--small header__bot" data-bot-link href="#contact" target="_blank" rel="noopener">Написать боту</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 2. ПЕРВЫЙ ЭКРАН (параллакс-сцена) ============ -->
+    <!-- data-depth: 0 = бесконечно далеко (почти не двигается), 1 = передний план -->
+    <section class="hero scene" data-parallax>
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="">
+      <img class="layer" data-layer="far" data-depth="0.25" alt="">
+      <img class="layer" data-layer="mid" data-depth="0.5" alt="">
+      <div class="hero__content container" data-depth="0.35" data-fade>
+        <p class="eyebrow"><span class="dot"></span>Студия разработки игр · тестовая версия сайта</p>
+        <h1 class="hero__title">Строим <span class="grad">миры</span>,<br>в которые хочется <span class="grad">играть</span></h1>
+        <p class="hero__lead">Arkitech Studio делает игры под ключ — от идеи на салфетке до релиза в сторах. Здесь пока тестовый текст, но параллакс уже настоящий.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--big" data-bot-link href="#contact" target="_blank" rel="noopener">Обсудить проект <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost btn--big" href="#games">Смотреть игры</a>
+        </div>
+      </div>
+      <img class="layer" data-layer="fg" data-depth="1" alt="">
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.35" alt="">
+      <a class="scroll-hint" href="#about" aria-label="Листать вниз"><span></span></a>
+    </section>
+
+    <!-- Бегущая строка -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>PC</span><i>✦</i><span>Mobile</span><i>✦</i><span>Консоли</span><i>✦</i><span>Unity</span><i>✦</i><span>Unreal Engine</span><i>✦</i><span>Godot</span><i>✦</i><span>Pixel Art</span><i>✦</i><span>3D</span><i>✦</i><span>Геймдизайн</span><i>✦</i>
+        <span>PC</span><i>✦</i><span>Mobile</span><i>✦</i><span>Консоли</span><i>✦</i><span>Unity</span><i>✦</i><span>Unreal Engine</span><i>✦</i><span>Godot</span><i>✦</i><span>Pixel Art</span><i>✦</i><span>3D</span><i>✦</i><span>Геймдизайн</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ 3. О СТУДИИ ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span>О студии</p>
+          <h2 class="title">Небольшая команда с&nbsp;большим <span class="grad">инвентарём</span></h2>
+        </div>
+        <div class="about__text reveal">
+          <p>Мы — тестовая студия Arkitech. Собираем игры так же, как архитекторы собирают здания: сначала прочный фундамент механик, потом этажи контента и только в конце — неоновая вывеска.</p>
+          <p>Работаем с инди-командами, издателями и брендами. Этот абзац — заглушка: позже здесь появится настоящая история студии.</p>
+        </div>
+        <ul class="stats reveal">
+          <li><b data-count="12">12</b><span>тестовых релизов</span></li>
+          <li><b data-count="7">7</b><span>лет в геймдеве</span></li>
+          <li><b data-count="35">35</b><span>человек в команде</span></li>
+          <li><b data-count="4">4</b><span>платформы</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Параллакс-разделитель 1 -->
+    <div class="divider scene" data-parallax data-strength="0.4" aria-hidden="true">
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="" loading="lazy">
+      <img class="layer" data-layer="far" data-depth="0.3" alt="" loading="lazy">
+      <p class="divider__text" data-depth="0.6">PLAY · BUILD · SHIP</p>
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.4" alt="" loading="lazy">
+    </div>
+
+    <!-- ============ 4. НАШИ ИГРЫ ============ -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Наши игры</p>
+          <h2 class="title">Проекты-<span class="grad">заглушки</span></h2>
+          <p class="section__lead">Названия и описания выдуманы для теста вёрстки. Обложки лежат в <code>assets/img/</code>.</p>
+        </div>
+        <div class="games">
+          <article class="game reveal" tabindex="0">
+            <img class="game__img" src="assets/img/game-1.svg" alt="Обложка игры Neon Drift" loading="lazy" width="800" height="1000">
+            <div class="game__body">
+              <span class="tag">Аркадные гонки · PC</span>
+              <h3>Neon Drift</h3>
+              <p>Гонки по ночному синтвейв-шоссе. Тестовое описание: дрифт, неон и сто процентов выдумки.</p>
+            </div>
+          </article>
+          <article class="game reveal" tabindex="0">
+            <img class="game__img" src="assets/img/game-2.svg" alt="Обложка игры «Глубина 9»" loading="lazy" width="800" height="1000">
+            <div class="game__body">
+              <span class="tag">Приключение · Mobile</span>
+              <h3>Глубина 9</h3>
+              <p>Исследование затонувшей станции на маленькой подлодке. Сюжет пока существует только в этой карточке.</p>
+            </div>
+          </article>
+          <article class="game reveal" tabindex="0">
+            <img class="game__img" src="assets/img/game-3.svg" alt="Обложка игры «Последний маяк»" loading="lazy" width="800" height="1000">
+            <div class="game__body">
+              <span class="tag">Сюжетный платформер · Switch</span>
+              <h3>Последний маяк</h3>
+              <p>2D-платформер о смотрителе маяка на краю карты. Тестовый проект, но мы бы в такое поиграли.</p>
+            </div>
+          </article>
+          <article class="game reveal" tabindex="0">
+            <img class="game__img" src="assets/img/game-4.svg" alt="Обложка игры «Орбита-13»" loading="lazy" width="800" height="1000">
+            <div class="game__body">
+              <span class="tag">Стратегия · PC / Mobile</span>
+              <h3>Орбита-13</h3>
+              <p>Колония на орбите рыжей планеты. Ресурсов мало, заглушек много — классика жанра.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. УСЛУГИ ============ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Услуги</p>
+          <h2 class="title">Что мы <span class="grad">умеем</span></h2>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <span class="service__num">01</span>
+            <h3>Разработка игр</h3>
+            <p>Полный цикл: прототип, вертикальный срез, продакшн и релиз. Unity, Unreal Engine, Godot.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">02</span>
+            <h3>Геймдизайн</h3>
+            <p>Механики, баланс, экономика и документация. Проверяем идеи прототипами, а не спорами.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">03</span>
+            <h3>2D / 3D-арт</h3>
+            <p>Концепты, персонажи, окружение, интерфейсы и анимация — в едином стиле проекта.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">04</span>
+            <h3>Портирование</h3>
+            <p>Переносим игры между PC, мобильными и консолями: управление, производительность, сертификация.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">05</span>
+            <h3>Звук и музыка</h3>
+            <p>Саунд-дизайн и адаптивные саундтреки. Тестовый пункт, чтобы сетка выглядела полнее.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">06</span>
+            <h3>Поддержка и LiveOps</h3>
+            <p>Обновления, события, аналитика и исправления после релиза — пока игроки играют.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Параллакс-разделитель 2 -->
+    <div class="divider scene" data-parallax data-strength="0.4" aria-hidden="true">
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="" loading="lazy">
+      <img class="layer" data-layer="mid" data-depth="0.45" alt="" loading="lazy">
+      <p class="divider__text divider__text--big" data-depth="0.7">LEVEL UP</p>
+      <img class="layer" data-layer="fg" data-depth="1" alt="" loading="lazy">
+    </div>
+
+    <!-- ============ 6. КАК МЫ РАБОТАЕМ ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Как мы работаем</p>
+          <h2 class="title">Четыре <span class="grad">уровня</span> до релиза</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Знакомство</h3>
+            <p>Вы пишете боту, мы созваниваемся и разбираем идею, сроки и бюджет.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Прототип</h3>
+            <p>За пару недель собираем играбельный прототип и проверяем, весело ли это.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Продакшн</h3>
+            <p>Работаем спринтами: каждые две недели — новая сборка и понятный отчёт.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Релиз и поддержка</h3>
+            <p>Выпускаем игру в сторах, следим за метриками и готовим обновления.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 7. ФИНАЛЬНЫЙ ПРИЗЫВ ============ -->
+    <section class="cta scene" id="contact" data-parallax data-strength="0.4">
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="" loading="lazy">
+      <img class="layer" data-layer="far" data-depth="0.3" alt="" loading="lazy">
+      <img class="layer" data-layer="fg" data-depth="1" alt="" loading="lazy">
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.4" alt="" loading="lazy">
+      <div class="container cta__content reveal">
+        <p class="eyebrow"><span class="dot"></span>Готовы начать?</p>
+        <h2 class="cta__title">Расскажите об&nbsp;игре — <span class="grad">ответим в&nbsp;Telegram</span></h2>
+        <p class="cta__lead">Бот задаст пару вопросов и передаст заявку команде. Тестовое обещание: отвечаем в течение одного рабочего дня.</p>
+        <a class="btn btn--primary btn--huge" data-bot-link href="#contact" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.500c-.2 1-.9 1.300-1.800.8l-4.900-3.600-2.400 2.300c-.3.3-.5.5-1 .5l.4-5 9.100-8.200c.4-.4-.1-.5-.6-.2L6.300 13.200l-4.800-1.500c-1-.3-1-1 .2-1.500L20.500 3c.9-.3 1.700.2 1.400 1.300Z"/></svg>
+          Написать боту
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 8. ПОДВАЛ ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>ARKITECH<span class="logo__dim">.STUDIO</span></a>
+        <p class="footer__note">Студия разработки игр. Все тексты и проекты на этой странице — тестовые.</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul class="footer__list">
+          <li><a href="mailto:hello@arkitech.studio">hello@arkitech.studio</a></li>
+          <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+          <li>Город-заглушка, ул. Тестовая, 1</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Соцсети</h4>
+        <ul class="footer__list">
+          <li><a data-bot-link href="#contact" target="_blank" rel="noopener">Telegram-бот</a></li>
+          <li><a href="#" rel="noopener">VK (заглушка)</a></li>
+          <li><a href="#" rel="noopener">YouTube (заглушка)</a></li>
+          <li><a href="#" rel="noopener">Steam (заглушка)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> Arkitech Studio</span>
+      <span>Сделано с параллаксом ✦</span>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка бота (только на телефоне, появляется после первого экрана) -->
+  <a class="fab" id="fab" data-bot-link href="#contact" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+    <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.500c-.2 1-.9 1.300-1.800.8l-4.900-3.600-2.400 2.300c-.3.3-.5.5-1 .5l.4-5 9.100-8.200c.4-.4-.1-.5-.6-.2L6.300 13.200l-4.800-1.500c-1-.3-1-1 .2-1.500L20.500 3c.9-.3 1.700.2 1.400 1.300Z"/></svg>
+    Обсудить проект
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
