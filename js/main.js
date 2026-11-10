@@ -48,8 +48,8 @@
      Скролл: далёкие слои «отстают» от страницы, близкие едут вместе с ней.
      Мышь (только ПК): чем ближе слой, тем сильнее он смещается против курсора.
      На телефоне — только скролл и с меньшей силой. */
-  var SCROLL_K = finePointer ? 0.45 : 0.28;   // сила параллакса от скролла
-  var MOUSE_X = 26, MOUSE_Y = 14;             // макс. сдвиг от мыши, px
+  var SCROLL_K = finePointer ? 0.6 : 0.4;    // сила параллакса от скролла
+  var MOUSE_X = 40, MOUSE_Y = 20;             // макс. сдвиг от мыши, px
   var vh = window.innerHeight, scrollY = window.pageYOffset;
   var mouse = { x: 0, y: 0, tx: 0, ty: 0 };
   var ticking = false;
