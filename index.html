@@ -29,26 +29,10 @@
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body data-page="home">
 
-  <!-- ============ 1. ШАПКА ============ -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a class="logo" href="#top" aria-label="Arkitech Studio — наверх">
-        <span class="logo__mark" aria-hidden="true"></span>ARKITECH<span class="logo__dim">.STUDIO</span>
-      </a>
-      <nav class="nav" id="nav" aria-label="Основное меню">
-        <a href="#about">О студии</a>
-        <a href="#games">Игры</a>
-        <a href="#services">Услуги</a>
-        <a href="#process">Процесс</a>
-        <a href="#contact">Контакты</a>
-        <a class="btn btn--small nav__bot" data-bot-link href="#contact" target="_blank" rel="noopener">Написать боту</a>
-      </nav>
-      <a class="btn btn--small header__bot" data-bot-link href="#contact" target="_blank" rel="noopener">Написать боту</a>
-      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
-    </div>
-  </header>
+  <!-- ============ 1. ШАПКА — общая для всех страниц, собирается в js/layout.js ============ -->
+  <header id="header"></header>
 
   <main id="top">
 
@@ -97,6 +81,24 @@
           <li><b data-count="35">35</b><span>человек в команде</span></li>
           <li><b data-count="4">4</b><span>платформы</span></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ============ 3а. НАПРАВЛЕНИЯ ============ -->
+    <section class="section section--alt" id="directions">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Направления</p>
+          <h2 class="title">Не только <span class="grad">студия</span></h2>
+          <p class="section__lead">Делаем игры для клиентов, учим делать игры и собираем людей вместе.</p>
+        </div>
+        <div class="dirs">
+          <a class="dir dir--big reveal" href="academy.html"><span class="dir__num">01</span><h3>Академия</h3><p>Онлайн-программы для 6–11, 12–17 и 18+. Три формата: самостоятельно, с проверкой, персонально.</p><span class="dir__go">Выбрать программу →</span></a>
+          <a class="dir dir--big reveal" href="jams.html"><span class="dir__num">02</span><h3>Джемы и кэмпы</h3><p>Гейм-джемы онлайн и выездные буткемпы. Заявка без оплаты, пока группа не собрана.</p><span class="dir__go">Ближайшие наборы →</span></a>
+          <a class="dir reveal" href="academy.html#mentors"><span class="dir__num">03</span><h3>Менторы</h3><p>Персональное сопровождение от разработчиков студии.</p><span class="dir__go">Выбрать ментора →</span></a>
+          <a class="dir reveal" href="events.html"><span class="dir__num">04</span><h3>События</h3><p>Митапы, плейтесты, мастер-классы и стримы.</p><span class="dir__go">Календарь →</span></a>
+          <a class="dir reveal" href="shop.html"><span class="dir__num">05</span><h3>Магазин</h3><p>Мерч и оборудование для разработки.</p><span class="dir__go">В магазин →</span></a>
+        </div>
       </div>
     </section>
 
@@ -235,6 +237,51 @@
       </div>
     </section>
 
+    <!-- ============ 6а. БЛИЖАЙШИЕ СОБЫТИЯ (данные: data/events.js) ============ -->
+    <section class="section section--alt" id="events">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Календарь</p>
+          <h2 class="title">Ближайшие <span class="grad">события</span></h2>
+        </div>
+        <div class="events" data-render="events" data-limit="3"></div>
+        <a class="link link--more" href="events.html">Все события →</a>
+      </div>
+    </section>
+
+    <!-- ============ 6б. ОТЗЫВЫ ============ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Отзывы</p>
+          <h2 class="title">Только <span class="grad">настоящие</span></h2>
+          <p class="section__lead">Здесь будут отзывы клиентов, учеников и родителей — с их согласия. Выдуманных отзывов не публикуем, поэтому пока это места под них.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="ph ph--photo reveal">Отзыв клиента студии</div>
+          <div class="ph ph--photo reveal">Отзыв ученика академии</div>
+          <div class="ph ph--photo reveal">Видеоотзыв с джема</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6в. ВОПРОСЫ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Вопросы</p>
+          <h2 class="title">Частые <span class="grad">вопросы</span></h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>Как заказать игру у студии?</summary><p>Напишите боту — он задаст пару вопросов и передаст заявку команде.</p></details>
+          <details class="reveal"><summary>С какого возраста учиться в академии?</summary><p>С 6 лет: для детей 6–11 — Scratch и Roblox, для подростков и взрослых — Unity, арт и геймдизайн.</p></details>
+          <details class="reveal"><summary>Как записаться на кэмп?</summary><p>Оставьте заявку — это бесплатно. Когда группа соберётся, подтвердим даты и пришлём ссылку на оплату.</p></details>
+          <details class="reveal"><summary>Как оплатить товар из магазина?</summary><p>Оформите заказ — менеджер подтвердит наличие и доставку и пришлёт ссылку на оплату.</p></details>
+          <details class="reveal"><summary>Можно ли оплатить ментору напрямую?</summary><p>Нет, все оплаты — только через сайт и учебную платформу. Так мы отвечаем за качество и возвраты.</p></details>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ 7. ФИНАЛЬНЫЙ ПРИЗЫВ ============ -->
     <section class="cta scene" id="contact" data-parallax data-strength="0.65">
       <img class="layer" data-layer="bg" data-depth="0.05" alt="" loading="lazy">
@@ -253,44 +300,18 @@
     </section>
   </main>
 
-  <!-- ============ 8. ПОДВАЛ ============ -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div>
-        <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>ARKITECH<span class="logo__dim">.STUDIO</span></a>
-        <p class="footer__note">Студия разработки игр. Все тексты и проекты на этой странице — тестовые.</p>
-      </div>
-      <div>
-        <h4>Контакты</h4>
-        <ul class="footer__list">
-          <li><a href="mailto:hello@arkitech.studio">hello@arkitech.studio</a></li>
-          <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
-          <li>Город-заглушка, ул. Тестовая, 1</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Соцсети</h4>
-        <ul class="footer__list">
-          <li><a data-bot-link href="#contact" target="_blank" rel="noopener">Telegram-бот</a></li>
-          <li><a href="#" rel="noopener">VK (заглушка)</a></li>
-          <li><a href="#" rel="noopener">YouTube (заглушка)</a></li>
-          <li><a href="#" rel="noopener">Steam (заглушка)</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__bottom">
-      <span>© <span id="year">2026</span> Arkitech Studio</span>
-      <span>Сделано с параллаксом ✦</span>
-    </div>
-  </footer>
+  <!-- ============ 8. ПОДВАЛ — общий, собирается в js/layout.js ============ -->
+  <footer id="footer"></footer>
 
-  <!-- Плавающая кнопка бота (только на телефоне, появляется после первого экрана) -->
-  <a class="fab" id="fab" data-bot-link href="#contact" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-    <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.500c-.2 1-.9 1.300-1.800.8l-4.900-3.600-2.400 2.300c-.3.3-.5.5-1 .5l.4-5 9.100-8.200c.4-.4-.1-.5-.6-.2L6.300 13.200l-4.800-1.500c-1-.3-1-1 .2-1.500L20.500 3c.9-.3 1.700.2 1.400 1.300Z"/></svg>
-    Обсудить проект
-  </a>
-
+  <!-- Порядок важен: настройки → данные → каркас → страницы → эффекты -->
   <script src="js/config.js"></script>
+  <script src="data/programs.js"></script>
+  <script src="data/mentors.js"></script>
+  <script src="data/jams.js"></script>
+  <script src="data/events.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

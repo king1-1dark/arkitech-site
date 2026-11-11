@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Джемы и кэмпы — Arkitech Studio</title>
+  <meta name="description" content="Онлайн-джемы и выездные буткемпы по разработке игр. Тестовая версия.">
+  <meta name="theme-color" content="#101114">
+  <link rel="canonical" href="https://arkitech.studio/jams.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Arkitech Studio">
+  <meta property="og:title" content="Джемы и кэмпы — Arkitech Studio">
+  <meta property="og:description" content="Онлайн-джемы и выездные буткемпы по разработке игр. Тестовая версия.">
+  <meta property="og:image" content="https://arkitech.studio/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="jams">
+  <header id="header"></header>
+  <main id="top">
+    <!-- Параллакс-шапка страницы -->
+    <section class="hero hero--page scene" data-parallax>
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="">
+      <img class="layer" data-layer="far" data-depth="0.25" alt="">
+      <img class="layer" data-layer="mid" data-depth="0.5" alt="">
+      <div class="hero__content container" data-depth="0.35" data-fade>
+        <p class="eyebrow"><span class="dot"></span><span>Джемы и кэмпы · тест</span></p>
+        <h1 class="hero__title hero__title--page">Делаем игры <span class="grad">вместе</span></h1>
+        <p class="hero__lead">Онлайн-джемы на выходные и выездные буткемпы для подростков. Каждый набор — со своим статусом.</p>
+        <div class="hero__actions"><a class="btn btn--primary btn--big" href="#list">Ближайшие наборы <span class="btn__arrow" aria-hidden="true">→</span></a><a class="btn btn--ghost btn--big" href="#archive">Как это было</a></div>
+      </div>
+      <img class="layer" data-layer="fg" data-depth="1" alt="">
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.35" alt="">
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Как работает запись</p>
+          <h2 class="title">Без оплаты, пока <span class="grad">нет группы</span></h2>
+          <p class="section__lead">Мы не берём деньги за поездку, которая ещё не подтверждена.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">1</span><h3>Заявка</h3><p>Статус «Собираем заявки». Оставляете заявку — бесплатно.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Группа</h3><p>Когда набирается минимум участников, подтверждаем даты.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Бронь и оплата</h3><p>Статус «Набор подтверждён»: бронируете место и оплачиваете.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Лист ожидания</h3><p>«Группа набрана» — встаёте в очередь на освободившееся место.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ НАБОРЫ (данные: data/jams.js) ============ -->
+    <section class="section section--alt" id="list">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Наборы</p>
+          <h2 class="title">Ближайшие джемы и кэмпы</h2>
+          <p class="section__lead">Остаток мест показываем только для подтверждённых наборов — по фактическому учёту.</p>
+        </div>
+        <div class="grid" data-render="jams"></div>
+      </div>
+    </section>
+
+    <!-- ============ АРХИВ ============ -->
+    <section class="section" id="archive">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Архив</p>
+          <h2 class="title">Как это <span class="grad">было</span></h2>
+          <p class="section__lead">Фото- и видеоотчёты прошедших джемов и поездок.</p>
+        </div>
+        <div class="grid" data-render="jams-archive"></div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+
+  <!-- Порядок важен: настройки → данные → каркас → страницы → эффекты -->
+  <script src="js/config.js"></script>
+  <script src="data/programs.js"></script>
+  <script src="data/mentors.js"></script>
+  <script src="data/jams.js"></script>
+  <script src="data/events.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

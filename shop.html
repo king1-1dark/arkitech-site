@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Магазин — Arkitech Studio</title>
+  <meta name="description" content="Мерч и оборудование Arkitech. Тестовая версия.">
+  <meta name="theme-color" content="#101114">
+  <link rel="canonical" href="https://arkitech.studio/shop.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Arkitech Studio">
+  <meta property="og:title" content="Магазин — Arkitech Studio">
+  <meta property="og:description" content="Мерч и оборудование Arkitech. Тестовая версия.">
+  <meta property="og:image" content="https://arkitech.studio/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="shop">
+  <header id="header"></header>
+  <main id="top">
+    <!-- Параллакс-шапка страницы -->
+    <section class="hero hero--page scene" data-parallax>
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="">
+      <img class="layer" data-layer="far" data-depth="0.25" alt="">
+      <img class="layer" data-layer="mid" data-depth="0.5" alt="">
+      <div class="hero__content container" data-depth="0.35" data-fade>
+        <p class="eyebrow"><span class="dot"></span><span>Магазин · тест</span></p>
+        <h1 class="hero__title hero__title--page">Мерч и <span class="grad">девайсы</span></h1>
+        <p class="hero__lead">Фирменная одежда и оборудование для разработки. Заказ без оплаты — менеджер подтвердит наличие и пришлёт ссылку на оплату.</p>
+        
+      </div>
+      <img class="layer" data-layer="fg" data-depth="1" alt="">
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.35" alt="">
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="filters reveal" data-render="shop-filters"></div>
+        <div class="grid grid--shop" data-render="shop"></div>
+        <ol class="steps steps--compact">
+          <li class="step reveal"><span class="step__num">1</span><h3>Корзина</h3><p>Добавьте товары и оформите заказ.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Проверка</h3><p>Менеджер подтверждает наличие и стоимость доставки.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Оплата</h3><p>Приходит ссылка на оплату — платите только подтверждённый заказ.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Доставка</h3><p>Москва — курьер или самовывоз, регионы — СДЭК.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+
+  <!-- Порядок важен: настройки → данные → каркас → страницы → эффекты -->
+  <script src="js/config.js"></script>
+  <script src="data/programs.js"></script>
+  <script src="data/mentors.js"></script>
+  <script src="data/jams.js"></script>
+  <script src="data/events.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

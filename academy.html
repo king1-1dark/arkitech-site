@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Академия геймдева — Arkitech Studio</title>
+  <meta name="description" content="Онлайн-программы по разработке игр для детей, подростков и взрослых. Тестовая версия.">
+  <meta name="theme-color" content="#101114">
+  <link rel="canonical" href="https://arkitech.studio/academy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Arkitech Studio">
+  <meta property="og:title" content="Академия геймдева — Arkitech Studio">
+  <meta property="og:description" content="Онлайн-программы по разработке игр для детей, подростков и взрослых. Тестовая версия.">
+  <meta property="og:image" content="https://arkitech.studio/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="academy">
+  <header id="header"></header>
+  <main id="top">
+    <!-- Параллакс-шапка страницы -->
+    <section class="hero hero--page scene" data-parallax>
+      <img class="layer" data-layer="bg" data-depth="0.05" alt="">
+      <img class="layer" data-layer="far" data-depth="0.25" alt="">
+      <img class="layer" data-layer="mid" data-depth="0.5" alt="">
+      <div class="hero__content container" data-depth="0.35" data-fade>
+        <p class="eyebrow"><span class="dot"></span><span>Академия Arkitech · тест</span></p>
+        <h1 class="hero__title hero__title--page">Академия <span class="grad">геймдева</span></h1>
+        <p class="hero__lead">Онлайн-программы для детей 6–11, подростков 12–17 и взрослых. Учатся у разработчиков нашей студии.</p>
+        <div class="hero__actions"><button class="btn btn--primary btn--big" type="button" data-form="pick-program" data-title="Подбор программы">Подобрать программу <span class="btn__arrow" aria-hidden="true">→</span></button><a class="btn btn--ghost btn--big" href="#catalog">Все программы</a></div>
+      </div>
+      <img class="layer" data-layer="fg" data-depth="1" alt="">
+      <img class="layer layer--particles" data-layer="particles" data-depth="1.35" alt="">
+    </section>
+
+    <!-- ============ ФОРМАТЫ ============ -->
+    <section class="section" id="formats">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Как проходит обучение</p>
+          <h2 class="title">Три <span class="grad">формата</span> на выбор</h2>
+          <p class="section__lead">Одна программа — три уровня поддержки. Формат выбирается при оплате.</p>
+        </div>
+        <div class="services">
+          <article class="service reveal"><span class="service__num">01</span><h3>Самостоятельно</h3><p>Уроки и задания открываются сразу после оплаты. Проходите в своём темпе.</p></article>
+          <article class="service reveal"><span class="service__num">02</span><h3>С обратной связью</h3><p>Сдаёте работы — ментор проверяет и пишет разбор: что получилось и что поправить.</p></article>
+          <article class="service reveal"><span class="service__num">03</span><h3>Персонально</h3><p>Личный план, видеоразборы, корректировки и созвон раз в неделю. Индивидуальные занятия по видеосвязи — отдельно.</p></article>
+        </div>
+        <ol class="steps steps--compact">
+          <li class="step reveal"><span class="step__num">1</span><h3>Выбор</h3><p>Программа и формат — или подбор с менеджером.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Оплата</h3><p>На странице учебной платформы, без скрытых платежей.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Доступ</h3><p>Кабинет открывается автоматически, письмо со входом.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Ментор</h3><p>В персональном формате ментор пишет сам и согласует старт.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ КАТАЛОГ (данные: data/programs.js) ============ -->
+    <section class="section section--alt" id="catalog">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Каталог</p>
+          <h2 class="title">Программы</h2>
+          <p class="section__lead">Найдено программ: <span data-render="catalog-count">0</span>. Продаём только готовые — остальные отмечены «Скоро».</p>
+        </div>
+        <div class="filters reveal" data-render="filters"></div>
+        <div class="grid" data-render="catalog"></div>
+      </div>
+    </section>
+
+    <!-- ============ МЕНТОРЫ (данные: data/mentors.js) ============ -->
+    <section class="section" id="mentors">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Менторы</p>
+          <h2 class="title">Учитесь у <span class="grad">практиков</span></h2>
+          <p class="section__lead">Все оплаты — только через академию. Прямых оплат ментору нет.</p>
+        </div>
+        <div class="grid" data-render="mentors"></div>
+        <div class="banner reveal">
+          <div><h3>Не знаете, кого выбрать?</h3><p>Подберём ментора под возраст, цель и расписание.</p></div>
+          <button class="btn btn--primary" type="button" data-form="pick-mentor" data-title="Подбор ментора">Помогите подобрать ментора</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ РЕЗУЛЬТАТЫ ============ -->
+    <section class="section section--alt" id="results">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Результаты</p>
+          <h2 class="title">Игры наших <span class="grad">учеников</span></h2>
+          <p class="section__lead">Здесь будут подтверждённые результаты: игры учеников, сертификаты, отзывы. Мы не публикуем выдуманные отзывы — поэтому пока здесь пусто.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="ph ph--photo reveal">Игра ученика · скриншот</div>
+          <div class="ph ph--photo reveal">Видео «до / после»</div>
+          <div class="ph ph--photo reveal">Отзыв родителя (с согласия)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ВОПРОСЫ ============ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span>Вопросы</p>
+          <h2 class="title">Частые <span class="grad">вопросы</span></h2>
+          
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>Когда откроется доступ?</summary><p>Сразу после оплаты: на почту придёт письмо со входом на учебную платформу.</p></details>
+          <details class="reveal"><summary>Можно ли продлить обучение?</summary><p>Да, после программы можно перейти на ежемесячное продолжение с ментором. Это отдельная оплата по желанию — без автосписаний.</p></details>
+          <details class="reveal"><summary>Что видит родитель?</summary><p>У родителя будет свой доступ: прогресс, задания и комментарии ментора.</p></details>
+          <details class="reveal"><summary>Можно ли сдавать задания с телефона?</summary><p>Да, видео и скриншоты загружаются на платформу прямо с телефона.</p></details>
+          <details class="reveal"><summary>Выдаёте ли сертификат?</summary><p>Электронный сертификат — после финального проекта, если он есть в программе.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+
+  <!-- Порядок важен: настройки → данные → каркас → страницы → эффекты -->
+  <script src="js/config.js"></script>
+  <script src="data/programs.js"></script>
+  <script src="data/mentors.js"></script>
+  <script src="data/jams.js"></script>
+  <script src="data/events.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
